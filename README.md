@@ -71,7 +71,12 @@ java -cp /opt/LanguageTool/LanguageTool-4.9.1-stable/languagetool-server.jar org
 
 The files used by LanguageTool is specified in the [config/server-config](config/server-config) file. The port is set by the `--port` option as 8081. The `--alow-origin` parameter allows user to use explorer plugins (which I am not using though). The parameter `--public` makes sure that we can visit the server from other machines.
 
+# Failed attemp to install the system on a Raspberry pi.
+
+I wanted to migrate the system onto a Raspberry Pi and run a server that checks texts for me. However, it failed because the default linux build compaints about architecture incompability of boost libraries. When I tried to compile from the source code, `maven` failed to find the dependency `com.google.protobuf:protoc:exe:linux-arm_32:3.11.0`. Notice that RaspberriPi runs on ARM chips. Given that I could not find the dependency, I decide to stop there. 
+
+In case anyone has successfully compiled LanguageTools on RaspberriPi systems, please kindly let me know.
+
 ## To do
 
 * Configure the tool to check markdown files
-* Migrate the system onto a Raspberry Pi and run a server that checks texts.
