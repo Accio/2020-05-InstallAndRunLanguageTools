@@ -57,8 +57,11 @@ I experimented a bit, and observed the following:
 * Using `--languagemodel` alone did not increase the number of issues reported. Is it automatically activated? 
 * Using `--word2vecmodel` increased the number of issues to 14. However, the additional reported issues are mostly redundant.
 
-On a regular laptop (HP 9470m, i5-3427U, 8G memory), it took about 6.5s to examine the ext, or about 1.2 second to examine one sentence.
+On a regular laptop (HP 9470m, i5-3427U, 8G memory), it took about 6.5s to examine the ext, or about 1.2 second to examine one sentence. The speed may not be the fastest, but it is much faster than I can write:)
+
+The whole directory is about 21G, including ngram and word2vec models for English and German. It will probably fit on a 32GB SD card.
 
 ## To do
 
-Migrate the system onto a Raspberry Pi and run a server that checks texts.
+* Configure the tool to check markdown files
+* Migrate the system onto a Raspberry Pi and run a server that checks texts.
