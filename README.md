@@ -54,7 +54,7 @@ I experimented a bit, and observed the following:
 
 * Using nothing than `-l en` (without the country code GB) reported 8 issues
 * Using `-l en-GB` reported 10 issues.
-* Using `--languagemodel` alone did not increase the number of issues reported - is it automatically activated? 
+* Using `--languagemodel` alone did not increase the number of issues reported. Is it automatically activated? 
 * Using `--word2vecmodel` increased the number of issues to 14. However, the additional reported issues are mostly redundant.
 
 On a regular laptop (HP 9470m, i5-3427U, 8G memory), it took about 6.5s to examine the ext, or about 1.2 second to examine one sentence.
