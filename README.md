@@ -61,6 +61,16 @@ On a regular laptop (HP 9470m, i5-3427U, 8G memory), it took about 6.5s to exami
 
 The whole directory is about 21G, including ngram and word2vec models for English and German. It will probably fit on a 32GB SD card.
 
+## Set up the local web server
+
+See the [tutorial](http://wiki.languagetool.org/http-server) to run a HTTP server of LanguageTools.
+
+```bash
+java -cp /opt/LanguageTool/LanguageTool-4.9.1-stable/languagetool-server.jar org.languagetool.server.HTTPServer --port 8081 --allow-origin "*" --public --config /opt/LanguageTool/config/server-config 
+```
+
+The files used by LanguageTool is specified in the [config/server-config](config/server-config) file. The port is set by the `--port` option as 8081. The `--alow-origin` parameter allows user to use explorer plugins (which I am not using though). The parameter `--public` makes sure that we can visit the server from other machines.
+
 ## To do
 
 * Configure the tool to check markdown files

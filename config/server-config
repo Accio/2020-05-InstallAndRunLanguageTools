@@ -1,0 +1,4 @@
+languageModel=/opt/LanguageTool/ngram-data
+word2vecModel=/opt/LanguageTool/word2vec
+fasttextModel=/opt/LanguageTool/fastTextData/wiki-news-300d-1M-subword.vec
+fasttextBinary=/opt/LanguageTool/fastText/fasttext
