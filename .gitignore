@@ -1,0 +1,6 @@
+*.swp
+LanguageTool-*
+fastText
+fastTextData
+word2vec
+ngram-data
